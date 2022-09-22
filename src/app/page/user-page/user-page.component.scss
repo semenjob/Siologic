@@ -1,0 +1,79 @@
+.setting,
+.usersForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerForm {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    .title {
+        line-height: 25px;
+    }
+}
+
+.setting {
+    background-color: #061125;
+    width: 150px;
+    font-size: 12px;
+
+    .btn {
+        margin: 20px auto;
+    }
+}
+
+
+.usersForm {
+    display: flex;
+    padding: 20px 12px 0 12px;
+
+    .form-control {
+        min-height: 35px;
+        width: 211px;
+    }
+
+    .send_btn {
+        margin: 20px 0;
+        margin-left: 430px;
+
+        &:disabled {
+            cursor: auto;
+            background: #AFAFAF;
+        }
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    width: 510px;
+    padding: 20px 12px;
+    row-gap: 10px;
+    min-height: 500px
+}
+
+.validation {
+    color: red;
+}
+
+input {
+    &.ng-valid {
+        border-color: green;
+    }
+
+    &.ng-invalid.ng-touched {
+        border-color: red;
+    }
+}
+
+.textarea {
+    overflow: scroll;
+    ;
+    width: 420px;
+    height: 55px;
+}

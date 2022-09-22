@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    color: #72B63B;
+}
+
+.btn {
+    text-align: center;
+    background: #72B63B;
+    width: 105px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+label {
+    line-height: 15px;
+    height: 15px;
+    display: block;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    width: 210px;
+    height: 22px;
+}

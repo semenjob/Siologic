@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="setting">
+    <div class="setting__btns">
+      <div class="setting__logo">Sort:</div>
+      <button (click)="sortBy('city')" class="btn">By City</button>
+      <button (click)="sortBy('company')" class="btn">By Company</button>
+    </div>
+  </div>
+  <div *ngIf="!loading; else loadingBlock" class="users">
+    <div class="users__logo">List of users</div>
+    <div *ngFor="let user of users" class="users__card">
+      <div class="name__info">
+        <div>Full Name</div>
+        <div>City</div>
+        <div>Company</div>
+      </div>
+
+      <div class="name__value">
+        <div>{{ user.name }}</div>
+        <div>{{ user.address.city }}</div>
+        <div>{{ user.company.name }}</div>
+      </div>
+
+      <div routerLink="userPage/{{ user.id }}" class="btn__detail">Detail</div>
+    </div>
+  </div>
+  <ng-template class="loading" #loadingBlock>
+    <div class="loading">
+      <span>loading...</span>
+    </div>
+  </ng-template>
+</div>
