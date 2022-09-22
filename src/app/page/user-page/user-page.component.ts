@@ -62,7 +62,7 @@ export class UserPageComponent implements OnInit {
   validForm = false
   editForm() {
     this.userForm.enable()
-   this.validForm = !this.validForm
+    this.validForm = !this.validForm
     this.isDisabled = !this.isDisabled
   }
   

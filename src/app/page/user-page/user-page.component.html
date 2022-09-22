@@ -145,7 +145,7 @@
       </div>
     </form>
     <button
-      [disabled]="validForm == false"
+      [disabled]="validForm == false || userForm.invalid"
       (click)="pushForm()"
       class="btn send_btn"
     >
